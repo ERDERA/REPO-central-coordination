@@ -1,88 +1,104 @@
----
 name: Repository Request
-about: Request a new repository within the organization and provide metadata
+description: Form to request a new repository within the organization and provide metadata
 title: "[Repository Request]: [Repository Name]"
-labels: ["Repository Request"]
-assignees: ["admin", "co-admin", "reviewer"]
+body:
+  - type: input
+    id: repository_name
+    attributes:
+      label: Repository Name
+      description: Provide the desired name for the repository.
+      placeholder: "Enter the repository name"
 
----
+  - type: input
+    id: title
+    attributes:
+      label: Title (`dct:title`)
+      description: Provide a human-readable title for the repository.
+      placeholder: "Enter the title"
 
-### Repository Name
-Provide the desired name for the repository:  
-`[Enter the name here]`
+  - type: textarea
+    id: description
+    attributes:
+      label: Description (`dct:description`)
+      description: Provide a description of the repository, including its purpose and scope.
+      placeholder: "Describe the purpose and scope of the repository"
 
----
+  - type: input
+    id: creator
+    attributes:
+      label: Creator (`dct:creator`)
+      description: Who is the main person or organization responsible for creating this repository? Include their GitHub username if applicable.
+      placeholder: "Name or organization and GitHub username"
 
-## DCAT Metadata
+  - type: textarea
+    id: contributors
+    attributes:
+      label: Contributors (`dct:contributor`)
+      description: List any other contributors or collaborators for this repository (GitHub usernames).
+      placeholder: "Enter the list of contributors"
 
-### Title (`dct:title`)
-Provide a human-readable title for the repository:  
-`[Enter the title here]`
+  - type: textarea
+    id: keywords
+    attributes:
+      label: Keywords (`dcat:keyword`)
+      description: List keywords (tags) that describe the repository’s content (comma-separated).
+      placeholder: "e.g., data, code, research"
 
-### Description (`dct:description`)
-Provide a description of the repository, including its purpose and scope:  
-`[Enter the description here]`
+  - type: dropdown
+    id: license
+    attributes:
+      label: License (`dct:license`)
+      description: Specify the license for the repository.
+      options:
+        - "MIT License"
+        - "Apache License 2.0"
+        - "GPL v3"
+        - "CC0 (Public Domain Dedication)"
+        - "CC BY (Attribution)"
+        - "CC BY-SA (Attribution-ShareAlike)"
+        - "CC BY-ND (Attribution-NoDerivatives)"
+        - "CC BY-NC (Attribution-NonCommercial)"
+        - "CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)"
+        - "CC BY-NC-ND (Attribution-NonCommercial-NoDerivatives)"
+        - "Other (please specify below)"
 
-### Creator (`dct:creator`)
-Who is the main person or organization responsible for creating this repository?  
-- Name: `[Enter name]`  
-- GitHub username: `[Enter GitHub username]`
+  - type: input
+    id: custom_license
+    attributes:
+      label: Custom License
+      description: If you selected 'Other' above, please specify the license.
+      placeholder: "Enter your custom license"
 
-### Contributor (`dct:contributor`)
-List any other contributors or collaborators for this repository:  
-- `[Enter contributors here by their GitHub username]`
+  - type: checkboxes
+    id: dataset_or_code_type
+    attributes:
+      label: Dataset or Code Type (`dcat:theme`)
+      description: What type of content does the repository contain?
+      options:
+        - label: "Codebase"
+        - label: "Dataset"
+        - label: "Documentation"
+        - label: "Other (please specify below)"
 
-### Keywords (`dcat:keyword`)
-List keywords (tags) that describe the repository’s content (comma-separated):  
-`[Enter keywords]`
+  - type: checkboxes
+    id: public_or_private
+    attributes:
+      label: Visibility
+      description: Should the repository be public or private?
+      options:
+        - label: "Public"
+        - label: "Private"
 
-### License (`dct:license`)
-Specify the license for the repository:  
-#### Software Licenses
-- [ ] MIT License  
-- [ ] Apache License 2.0  
-- [ ] GPL v3  
-- [ ] Other: `[Specify here]`
+  - type: textarea
+    id: access_permissions
+    attributes:
+      label: Access Permissions
+      description: Who should have access to this repository, and with what permissions (e.g., read, write, admin)?
+      placeholder: "List users/groups and their permissions"
 
-#### Creative Commons Licenses (for content/datasets)
-- [ ] CC0 (Public Domain Dedication)  
-- [ ] CC BY (Attribution)  
-- [ ] CC BY-SA (Attribution-ShareAlike)  
-- [ ] CC BY-ND (Attribution-NoDerivatives)  
-- [ ] CC BY-NC (Attribution-NonCommercial)  
-- [ ] CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)  
-- [ ] CC BY-NC-ND (Attribution-NonCommercial-NoDerivatives)  
-
-### Dataset or Code Type (`dcat:theme`)
-What type of content does the repository contain?  
-- [ ] Codebase  
-- [ ] Dataset  
-- [ ] Documentation  
-- [ ] Other: `[Specify here]`
-
----
-
-## Repository Details
-
-### Public or Private
-Should the repository be public or private?  
-- [ ] Public  
-- [ ] Private  
-
-### Access Permissions
-Who should have access to this repository, and with what permissions (e.g., read, write, admin)?  
-- Users/Groups:
-  - `[List users or groups and their permissions]`
-
-### Additional Information
-Is there anything else we should know about creating this repository?  
-`[Enter additional details here]`
-
----
-
-### Actions for Admin
-- [ ] Name verified
-- [ ] Metadata recorded
-- [ ] Repository created
-- [ ] Permissions granted
-- [ ] Requester informed
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: Is there anything else we should know about creating this repository?
+      placeholder: "Enter additional details if any"
