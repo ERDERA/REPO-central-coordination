@@ -1,112 +1,137 @@
----
 name: Relocate Repository Request
-description: Request to relocate a remote GitHub repository to this organization
+description: Form to request the relocation of a remote GitHub repository to this organization
 title: "[Relocate Repository]: [Source Repo Name]"
-labels: ["Repository Relocation"]
-assignees: ["andra", "co-admin"]
 body:
+  - type: input
+    id: source_repository_url
+    attributes:
+      label: Source Repository URL
+      description: Provide the URL of the repository to be relocated.
+      placeholder: "https://github.com/owner/repository"
 
-### Source Repository Details
+  - type: input
+    id: source_repository_owner
+    attributes:
+      label: Owner of the Source Repository
+      description: Who owns the source repository? Provide the owner/organization name and GitHub username if applicable.
+      placeholder: "Owner or organization name"
 
-#### Current Repository URL
-Provide the URL of the repository to be relocated:  
-`[Enter the repository URL here]`
+  - type: input
+    id: current_license
+    attributes:
+      label: Current License
+      description: Specify the license under which the source repository is currently shared.
+      placeholder: "e.g., MIT License, Apache 2.0, etc."
 
-#### Owner of the Source Repository
-Who owns the source repository?  
-- Owner/Organization: `[Enter the owner or organization name]`  
-- GitHub username (if applicable): `[Enter the GitHub username]`
+  - type: input
+    id: destination_repository_name
+    attributes:
+      label: Intended Repository Name
+      description: What should the name of the relocated repository be in this organization?
+      placeholder: "Enter the repository name"
 
-#### Current License
-What license is the repository currently under?  
-`[Specify the license]`
+  - type: textarea
+    id: repository_description
+    attributes:
+      label: Repository Description
+      description: Provide a brief description of the relocated repository.
+      placeholder: "Describe the repository's purpose and content"
 
----
+  - type: checkboxes
+    id: public_or_private
+    attributes:
+      label: Visibility
+      description: Should the relocated repository be public or private?
+      options:
+        - label: "Public"
+        - label: "Private"
 
-### Destination Repository Details
+  - type: textarea
+    id: access_permissions
+    attributes:
+      label: Access Permissions
+      description: Who should have access to this repository, and with what permissions (e.g., read, write, admin)?
+      placeholder: "List users/groups and their permissions"
 
-#### Intended Repository Name
-What should the name of the relocated repository be in this organization?  
-`[Enter the name here]`
+  - type: input
+    id: repository_title
+    attributes:
+      label: Title (DCAT-Compatible)
+      description: Provide a human-readable title for the relocated repository.
+      placeholder: "Enter the title"
 
-#### Repository Description (`dct:description`)
-Provide a brief description of the relocated repository:  
-`[Enter the description here]`
+  - type: textarea
+    id: keywords
+    attributes:
+      label: Keywords
+      description: List keywords to describe the repository’s content (comma-separated).
+      placeholder: "e.g., data, code, research"
 
-#### Public or Private
-Should the relocated repository be public or private?  
-- [ ] Public  
-- [ ] Private  
+  - type: input
+    id: creator
+    attributes:
+      label: Creator
+      description: Who is the main person or organization responsible for the source repository? Include GitHub username if applicable.
+      placeholder: "Name or organization and GitHub username"
 
-#### Access Permissions
-Who should have access to this repository, and with what permissions (e.g., read, write, admin)?  
-- Users/Groups:
-  - `[List users or groups and their permissions]`
+  - type: textarea
+    id: contributors
+    attributes:
+      label: Contributors
+      description: List any other contributors or collaborators for the source repository.
+      placeholder: "List of contributors"
 
----
+  - type: dropdown
+    id: new_license
+    attributes:
+      label: License for the Relocated Repository
+      description: Choose a license for the relocated repository.
+      options:
+        - "MIT License"
+        - "Apache License 2.0"
+        - "GPL v3"
+        - "CC0"
+        - "CC BY"
+        - "CC BY-SA"
+        - "Other (please specify below)"
 
-### Metadata for Relocated Repository (DCAT-Compatible)
+  - type: input
+    id: custom_license
+    attributes:
+      label: Custom License
+      description: If you selected 'Other' above, please provide the license here.
+      placeholder: "Enter your custom license"
 
-#### Title (`dct:title`)
-Provide a human-readable title for the relocated repository:  
-`[Enter the title here]`
+  - type: checkboxes
+    id: content_type
+    attributes:
+      label: Content Type
+      description: What type of content does the repository contain?
+      options:
+        - label: "Codebase"
+        - label: "Dataset"
+        - label: "Documentation"
+        - label: "Other (please specify below)"
 
-#### Keywords (`dcat:keyword`)
-List keywords (tags) to describe the repository’s content (comma-separated):  
-`[Enter keywords]`
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification for Relocation
+      description: Provide a brief justification for why this repository should be moved to this organization.
+      placeholder: "Explain why this relocation is necessary"
 
-#### Creator (`dct:creator`)
-Who is the main person or organization responsible for the source repository?  
-- Name: `[Enter name]`  
-- GitHub username (if applicable): `[Enter GitHub username]`
+  - type: checkboxes
+    id: dependencies
+    attributes:
+      label: Dependencies or Integrations
+      description: Are there any dependencies or integrations that will be impacted by this move?
+      options:
+        - label: "Yes (please specify below)"
+        - label: "No"
 
-#### Contributor (`dct:contributor`)
-List any other contributors or collaborators for the source repository:  
-- `[Enter contributors here]`
-
-#### License (`dct:license`)
-Choose a license for the relocated repository:  
-#### Software Licenses
-- [ ] MIT License  
-- [ ] Apache License 2.0  
-- [ ] GPL v3  
-- [ ] Other: `[Specify here]`
-
-#### Creative Commons Licenses (for content/datasets)
-- [ ] CC0 (Public Domain Dedication)  
-- [ ] CC BY (Attribution)  
-- [ ] CC BY-SA (Attribution-ShareAlike)   
-
-#### Dataset or Code Type (`dcat:theme`)
-What type of content does the repository contain?  
-- [ ] Codebase  
-- [ ] Dataset  
-- [ ] Documentation  
-- [ ] Other: `[Specify here]`
-
----
-
-### Justification for Relocation
-
-#### Why should the repository be relocated?
-Provide a brief justification for why this repository should be moved to this organization:  
-`[Enter your reasoning here]`
-
-#### Are there any dependencies or integrations that will be impacted by this move?
-- [ ] Yes: `[Describe dependencies]`  
-- [ ] No  
-
----
-
-### Additional Information
-Is there anything else we should know about this relocation request?  
-`[Enter additional details here]`
-
----
-
-### Actions for Admin
-- [ ] Source repository reviewed  
-- [ ] Permissions confirmed  
-- [ ] Repository transferred or mirrored  
-- [ ] Relocated repository metadata updated  
-- [ ] Requester informed
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: Is there anything else we should know about this relocation request?
+      placeholder: "Enter additional details if any"
