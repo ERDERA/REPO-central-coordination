@@ -1,0 +1,88 @@
+---
+name: Repository Request
+about: Request a new repository within the organization and provide metadata
+title: "[Repository Request]: [Repository Name]"
+labels: ["Repository Request"]
+assignees: ["admin", "co-admin", "reviewer"]
+
+---
+
+### Repository Name
+Provide the desired name for the repository:  
+`[Enter the name here]`
+
+---
+
+## DCAT Metadata
+
+### Title (`dct:title`)
+Provide a human-readable title for the repository:  
+`[Enter the title here]`
+
+### Description (`dct:description`)
+Provide a description of the repository, including its purpose and scope:  
+`[Enter the description here]`
+
+### Creator (`dct:creator`)
+Who is the main person or organization responsible for creating this repository?  
+- Name: `[Enter name]`  
+- GitHub username: `[Enter GitHub username]`
+
+### Contributor (`dct:contributor`)
+List any other contributors or collaborators for this repository:  
+- `[Enter contributors here by their GitHub username]`
+
+### Keywords (`dcat:keyword`)
+List keywords (tags) that describe the repository’s content (comma-separated):  
+`[Enter keywords]`
+
+### License (`dct:license`)
+Specify the license for the repository:  
+#### Software Licenses
+- [ ] MIT License  
+- [ ] Apache License 2.0  
+- [ ] GPL v3  
+- [ ] Other: `[Specify here]`
+
+#### Creative Commons Licenses (for content/datasets)
+- [ ] CC0 (Public Domain Dedication)  
+- [ ] CC BY (Attribution)  
+- [ ] CC BY-SA (Attribution-ShareAlike)  
+- [ ] CC BY-ND (Attribution-NoDerivatives)  
+- [ ] CC BY-NC (Attribution-NonCommercial)  
+- [ ] CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)  
+- [ ] CC BY-NC-ND (Attribution-NonCommercial-NoDerivatives)  
+
+### Dataset or Code Type (`dcat:theme`)
+What type of content does the repository contain?  
+- [ ] Codebase  
+- [ ] Dataset  
+- [ ] Documentation  
+- [ ] Other: `[Specify here]`
+
+---
+
+## Repository Details
+
+### Public or Private
+Should the repository be public or private?  
+- [ ] Public  
+- [ ] Private  
+
+### Access Permissions
+Who should have access to this repository, and with what permissions (e.g., read, write, admin)?  
+- Users/Groups:
+  - `[List users or groups and their permissions]`
+
+### Additional Information
+Is there anything else we should know about creating this repository?  
+`[Enter additional details here]`
+
+---
+
+### Actions for Admin
+- [ ] Name verified
+- [ ] Metadata recorded
+- [ ] Repository created
+- [ ] Permissions granted
+- [ ] Requester informed
