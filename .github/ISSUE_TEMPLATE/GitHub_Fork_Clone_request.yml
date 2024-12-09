@@ -3,9 +3,8 @@ name: Relocate Repository Request
 description: Request to relocate a remote GitHub repository to this organization
 title: "[Relocate Repository]: [Source Repo Name]"
 labels: ["Repository Relocation"]
-assignees: ["admin", "co-admin"]
-
----
+assignees: ["andra", "co-admin"]
+body:
 
 ### Source Repository Details
 
