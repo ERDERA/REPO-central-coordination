@@ -1,1 +1,2 @@
-# repository-requests
+# ERDERA Github central coordination
+* Teams request
