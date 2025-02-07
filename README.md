@@ -63,6 +63,7 @@ A github team is a group of people that have access to a set of repositories. Th
 graph TD
     subgraph ClusterA [Layer 1: SharePoint]
         SP[(SharePoint)]
+        DSW[(Data Steward Wizard)]
     end
 
     subgraph ClusterB [Layer 2: GitHub]
