@@ -82,6 +82,8 @@ graph TD
         WPL --> 14.2[Task 14.2]
         WPL --> 14.3[Task 14.3]
         WPL --> 16.5[Task 16.5]
+        16.5 --> OP[ontology_parsing]
+        16.5 --> SE
     end
 
     subgraph ClusterC [Layer 3: Zenodo]
@@ -90,10 +92,6 @@ graph TD
     
     ClusterA --> |is coordinated through| ClusterB
     ClusterB --> |is archived and diseminated on| ClusterC
-
-
-
-
 ```
 - To request new teams, please contact anyone from the central coordination team.
 - To request a new repository, please use the [Request a new repository](https://github.com/ERDERA/Central-coordination/issues/new?) form
