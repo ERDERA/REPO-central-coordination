@@ -76,8 +76,11 @@ graph TD
         PrivR --> CC[Central coordination]
         CC --> WPL[Work package leaders]
         CC --> AMC[AmsterdamUMC]
+        CC --> MR[molgenis-rd3]
         WPL --> 13.3[Task 13.3]
         WPL --> 14.1[Task 14.1]
+        WPL --> 14.2[Task 14.2]
+        WPL --> 14.3[Task 14.3]
         WPL --> 16.5[Task 16.5]
     end
 
