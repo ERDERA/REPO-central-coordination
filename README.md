@@ -72,6 +72,7 @@ graph TD
         EGH --> PubR[Public Repositories]  
         PubR --> WP16[Work package 16]
         WP16 --> SE[Semantic artefacts]
+        WP16 --> OFCO[OFCO_Mapping]
         SE --> SPARQLEX[ERDERA SPARQL Examples]
         PrivR --> CC[Central coordination]
         CC --> WPL[Work package leaders]
