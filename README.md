@@ -72,7 +72,7 @@ graph TD
         EGH --> PubR[Public Repositories]  
         PubR --> WP16[Work package 16]
         WP16 --> SE[Semantic artefacts]
-        WP16 --> OFCO[OFCO_Mapping]
+        
         SE --> SPARQLEX[ERDERA SPARQL Examples]
         PrivR --> CC[Central coordination]
         CC --> WPL[Work package leaders]
@@ -85,6 +85,7 @@ graph TD
         WPL --> 16.5[Task 16.5]
         16.5 --> OP[ontology_parsing]
         16.5 --> SE
+        16.5 --> OFCO[OFCO_Mapping]
     end
 
     subgraph ClusterC [Layer 3: Zenodo]
