@@ -5,14 +5,15 @@
 - [Introduction to the ERDERA GitHub Structure and Governance](#introduction-to-the-erdera-github-structure-and-governance)
 - [Governance of Repository Creation](#governance-of-repository-creation)
 - [ERDERA GitHub Layers](#erdera-github-layers)
-    - [Github inside the layers structure]()
-- [Navigating and using the ERDERA GitHub](#)
+- [Navigating and using the ERDERA GitHub](#navigating-and-using-the-erdera-github)
+    - [Teams](#teams)
+    - [Projects](#projects)
+    - [Repositories](#repositories)
+    - [Github through the Layers](#github-through-the-layers)
 - [How to Engage](#how-to-engage)
+    - [Forms](#forms)
 - [👥 GitHub Coordinators](#-github-coordinators)
-- [Forms](#forms)
-- [General Structure](#general-structure)
-  - [Teams](#teams)
-  - [Current Repositories](#current-repositories)
+- [Repositories details](#repositories-details)
 - [Private GitHub Repositories](#private-github-repositories)
   - [Central Coordination](#central-coordination)
   - [Work Package Leaders](#work-package-leaders)
@@ -130,43 +131,43 @@ The following people are the coordinators for this Github repository:
 - [Heena Lad](https://github.com/orgs/ERDERA/people/HeenaLad)
 - [Ronald Cornet (AmsterdamUMC)](https://github.com/orgs/ERDERA/people/ronaldcornet)
 
-# Repositories details
-## Private GitHub repositories
-### Central coordination
+## Repositories details
+### Private GitHub repositories
+#### Central coordination
 - [Andra Waagmeester (AmsterdamUMC)](https://github.com/andrawaag)
 - [Luiz Olavo Bonino da Silva Santos (UTwente)](https://github.com/luizbonino)
 - [Mark Hanauer (Orphanet)](https://github.com/orgs/ERDERA/people/Orphanet)
 - [Heena Lad](https://github.com/orgs/ERDERA/people/HeenaLad)
 - [Ronald Cornet (AmsterdamUMC)](https://github.com/orgs/ERDERA/people/ronaldcornet)
 
-### Work package leaders
+#### Work package leaders
 #Todo: Add the work package leaders
 
-### AmsterdamUMC
+#### AmsterdamUMC
 Availability: private
 - [Andra Waagmeester (AmsterdamUMC)](https://github.com/andrawaag)
 - [Ronald Cornet (AmsterdamUMC)](https://github.com/ronaldcornet)
 - [Nirupama Benis (AmsterdamUMC)](https://github.com/nirupamabenis)
 
-### Task 13.3
+#### Task 13.3
 Availability: public
 - [Nirupama Benis (AmsterdamUMC)](https://github.com/nirupamabenis)
 
-### Task 14.1
+#### Task 14.1
 Availability: public
 - [Nirupama Benis (AmsterdamUMC)](https://github.com/nirupamabenis)
 - [Andra Waagmeester (AmsterdamUMC)](https://github.com/andrawaag)
 
-### Task 16.5
+#### Task 16.5
 Availability: public
 - [Andra Waagmeester (AmsterdamUMC)](https://github.com/andrawaag)
 - [Mark Hanauer (Orphanet)](https://github.com/orgs/ERDERA/people/Orphanet)
 
-## Public GitHub repositories
-### Work package 16
+### Public GitHub repositories
+#### Work package 16
 - [Andra Waagmeester (AmsterdamUMC)](https://github.com/andrawaag)
 
-### Semantic artefacts
+#### Semantic artefacts
 - [Andra Waagmeester (AmsterdamUMC)](https://github.com/andrawaag)
-#### Description
+##### Description
 SPARQL examples is intended to be a collection of SPARQL examples for various ERDERA projects. This repository is a fork of the [SIB-Swiss sparql-examples repository](https://github.com/sib-swiss/sparql-examples) and follows the same structure and guidelines. The repository is used to store SPARQL queries in a structured way, with each query stored in a separate file. The queries are stored in the examples folder, with each project having its own subfolder. The repository also contains a README file with information about the project and how to contribute to it.
