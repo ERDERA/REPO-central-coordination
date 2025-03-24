@@ -91,6 +91,8 @@ graph TD
         CC --> WPL[Work package leaders]
         CC --> AMC[AmsterdamUMC]
         CC --> MR[molgenis-rd3]
+        WPL --> 13.1[Task 13.1]
+        WPL --> 13.2[Task 13.2]
         WPL --> 13.3[Task 13.3]
         WPL --> 14.1[Task 14.1]
         WPL --> 14.2[Task 14.2]
@@ -107,6 +109,37 @@ graph TD
     
     ClusterA --> |is coordinated through| ClusterB
     ClusterB --> |is archived and diseminated on| ClusterC
+
+    click OP "https://github.com/ERDERA/ontology_parsing"
+    click OFCO "https://github.com/ERDERA/OFCO_Mapping"
+    click SPARQLEX "https://github.com/ERDERA/sparql-examples"
+    click 16.5 "https://github.com/ERDERA/Task-16.5-coordination"
+    click 13.3 "https://github.com/ERDERA/Task-13.3"
+    click 14.1 "https://github.com/ERDERA/Task-14.1-coordination"
+    click 14.2 "https://github.com/ERDERA/Task-14.2"
+    click 14.3 "https://github.com/ERDERA/Task-14.3"
+    click 13.2 "https://github.com/ERDERA/Task-13.2"
+    click 13.1 "https://github.com/ERDERA/Task-13.1"
+    click MR "https://github.com/ERDERA/molgenis-rd3"
+    click AMC "https://github.com/ERDERA/AmsterdamUMC"
+
+    %% Colors
+    classDef repo2 fill:#efab5d
+    classDef repo fill:#a0d2ed
+    classDef wp fill:#9fecbf
+
+    class 16.5,OP,OFCO,13.3,14.1,14.2,14.3,13.2,13.1,Repo,MR,AMC repo;
+    class Repo2,SPARQLEX repo2;
+    class WPL,WP wp;
+
+    %% Legend
+    subgraph Cluster16_5 [Task-16.5 structure and subtasks]
+        direction TB
+        Repo(Private Repo)
+        Repo2(Public Repo)
+        WP(Work package)
+    end
+
 ```
 
 ## How to Engage
