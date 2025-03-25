@@ -133,7 +133,7 @@ graph TD
     class WPL,WP wp;
 
     %% Legend
-    subgraph Cluster16_5 [Task-16.5 structure and subtasks]
+    subgraph ClusterB [Legend]
         direction TB
         Repo(Private Repo)
         Repo2(Public Repo)
