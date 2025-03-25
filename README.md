@@ -37,7 +37,7 @@ At the core of this structure is the **central coordination repository**, which 
 The ERDERA GitHub organization operates under a distributed governance structure, which ensures that responsibilities for repository creation are shared among central coordination, work package leaders (WPL), and task leaders. This decentralized approach facilitates efficient collaboration and ensures that repositories are created in alignment with project needs and objectives.
 
 Roles and Responsibilities for Repository Creation :
-| `Role`                      | `Responsibilities` |
+| **`Role`**                      | **`Responsibilities`** |
 |---------------------------|-----------------|
 | **Central Coordination Team** | - **Oversee structure**: Manages the overall organization of the ERDERA GitHub.<br>- **Set guidelines**: Maintains repository naming conventions, access control, and usage policies.<br>- **Support repository creation**: Facilitates repositories for cross-cutting tasks or central infrastructure needs.<br>- **Handle special requests**: Manages cloning of repositories from the EJP RD project. |
 | **Work Package Leaders (WPL)** | - **Create repositories**: Authorized to establish repositories for their work packages.<br>- **Ensure alignment**: Guarantees that repositories meet deliverables and objectives.<br>- **Manage access**: Controls permissions for their work package team. |
@@ -49,7 +49,7 @@ Roles and Responsibilities for Repository Creation :
 
 The ERDERA infrastructure is organized into **three primary layers** to provide *clarity* and *functional separation*:
 
-| `Layer`      | `Purpose` | `Key Functions` |
+| **`Layer`**      | **`Purpose`** | **`Key Functions`** |
 |---------------|------------|------------------|
 | **Layer 1: SharePoint** | **Collaboration & Documentation** | - Centralized document management.<br>- File sharing and storage for project materials. |
 | **Layer 2: GitHub** | **Heart of Technical Coordination** | - Core development platform.<br>- Hosts private, public, and semantic artifacts repositories.<br>- Supports **SPARQL examples**, **semantic models**, and other essential resources. |
@@ -123,6 +123,14 @@ graph TD
     click MR "https://github.com/ERDERA/molgenis-rd3"
     click AMC "https://github.com/ERDERA/AmsterdamUMC"
 
+    %% Legend
+    subgraph ClusterB [Legend]
+        direction TB
+        Repo(Private Repo)
+        Repo2(Public Repo)
+        WP(Work package)
+    end
+
     %% Colors
     classDef repo2 fill:#efab5d
     classDef repo fill:#a0d2ed
@@ -132,13 +140,6 @@ graph TD
     class Repo2,SPARQLEX repo2;
     class WPL,WP wp;
 
-    %% Legend
-    subgraph ClusterB [Legend]
-        direction TB
-        Repo(Private Repo)
-        Repo2(Public Repo)
-        WP(Work package)
-    end
 
 ```
 
