@@ -13,7 +13,7 @@
 - [How to Engage](#how-to-engage)
     - [Forms](#forms)
 - [👥 GitHub Coordinators](#-github-coordinators)
-- [Repositories details](#repositories-details)
+- [Repositories details coordination](#repositories-details-coordination)
 - [Private GitHub Repositories](#private-github-repositories)
   - [Central Coordination](#central-coordination)
   - [Work Package Leaders](#work-package-leaders)
@@ -164,7 +164,7 @@ The following people are the coordinators for this Github repository:
 - [Heena Lad](https://github.com/orgs/ERDERA/people/HeenaLad)
 - [Ronald Cornet (AmsterdamUMC)](https://github.com/orgs/ERDERA/people/ronaldcornet)
 
-## Repositories details
+## Repositories details coordination
 ### Private GitHub repositories
 #### Central coordination
 - [Andra Waagmeester (AmsterdamUMC)](https://github.com/andrawaag)
