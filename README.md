@@ -71,9 +71,8 @@ graph TD
         EGH[(ERDERA GitHub)] --> PrivR[Private Repositories]
         EGH --> PubR[Public Repositories]  
         PubR --> WP16[Work package 16]
-        WP16 --> SE[Semantic artefacts]
+        WP16 --> SPARQLEX[ERDERA SPARQL Examples]
         
-        SE --> SPARQLEX[ERDERA SPARQL Examples]
         PrivR --> CC[Central coordination]
         CC --> WPL[Work package leaders]
         CC --> AMC[AmsterdamUMC]
@@ -84,7 +83,7 @@ graph TD
         WPL --> 14.3[Task 14.3]
         WPL --> 16.5[Task 16.5]
         16.5 --> OP[ontology_parsing]
-        16.5 --> SE
+        16.5 --> SPARQLEX
         16.5 --> OFCO[OFCO_Mapping]
     end
 
