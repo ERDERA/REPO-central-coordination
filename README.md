@@ -70,9 +70,8 @@ graph TD
     direction LR
         EGH[(ERDERA GitHub)] --> PrivR[Private Repositories]
         EGH --> PubR[Public Repositories]  
-        PubR --> WP16[Work package 16]
-        WP16 --> SPARQLEX[ERDERA SPARQL Examples]
-        
+        PubR --> SPARQLEX[ERDERA SPARQL Examples]
+   
         PrivR --> CC[Central coordination]
         CC --> WPL[Work package leaders]
         CC --> AMC[AmsterdamUMC]
