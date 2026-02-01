@@ -12,7 +12,7 @@
     - [Github through the Layers](#github-through-the-layers)
 - [How to Engage](#how-to-engage)
     - [Forms](#forms)
-- [👥 GitHub Coordinators](#-github-coordinators)
+- [GitHub Coordinators](#-github-coordinators)
 - [Repositories details coordination](#repositories-details-coordination)
 - [Private GitHub Repositories](#private-github-repositories)
   - [Central Coordination](#central-coordination)
@@ -155,7 +155,7 @@ By leveraging these mechanisms, partners can efficiently create, manage, and acc
 - [Request a new repository](https://github.com/ERDERA/Central-coordination/issues/new?)
 - [Request a clone of a repository from the previous EJP RD project](https://github.com/ERDERA/Central-coordination/issues/new?assignees=&labels=&projects=&template=GitHub_Fork_Clone_request.yml&title=%5BRelocate+Repository%5D%3A+%5BSource+Repo+Name%5D)
 
-## 👥 Github coordinators
+## Github coordinators
 The following people are the coordinators for this Github repository:
 - [Andra Waagmeester (AmsterdamUMC)](https://github.com/andrawaag)
 - [Luiz Olavo Bonino da Silva Santos (UTwente)](https://github.com/luizbonino)
